@@ -1,9 +1,17 @@
 .cardWrapper {
- padding: 3px;
- border: 1px solid grey;
  flex: 1 1 30%;
  width: 100px;
  color: white;
  text-align: center;
  font-size: 10rem;
+ background-color: var(--color);
+
+ @media only screen and (max-width: 375px) {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 3px;
+    background-color: gray;
+    border-left: 5px solid var(--color);
+ }
+
 }

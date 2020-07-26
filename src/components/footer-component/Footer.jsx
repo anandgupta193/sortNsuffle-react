@@ -6,7 +6,7 @@ const Footer = () => {
   const footerText = `${DEFAULT_FOOTER} ${AUTHOR}`;
   return (
     <footer className={styles.footerWrapper}>
-      {footerText}
+      { footerText }
     </footer>
   );
 };

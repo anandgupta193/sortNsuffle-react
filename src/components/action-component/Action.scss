@@ -1,6 +1,16 @@
-.actionWrapper {
+body {
+    margin: 0;
+    padding: 0;
+}
 
-    //media query
+.actionWrapper {
     display: flex;
     flex-direction: column;
+    padding: 32px;
+    margin-top: 24px;
+
+    @media only screen and (max-width: 375px) {
+        flex-direction: row;
+        padding: 16px;
+    }
 }
