@@ -70,13 +70,13 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: env === 'development',
+              sourceMap: env !== 'production',
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: env === 'development',
+              sourceMap: env !== 'production',
             },
           },
         ],
