@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import counter from './CounterReducer';
+import shuffledCards from './ShuffleReducer';
 
 const rootReducer = combineReducers({
-  counter,
+  shuffledCards,
 });
 
 export default rootReducer;

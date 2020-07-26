@@ -1,0 +1,13 @@
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+    width: 70vw;
+    overflow-y: scroll;
+
+    @media only screen and (max-width: 375px) {
+        padding: 16px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}

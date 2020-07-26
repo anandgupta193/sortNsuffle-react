@@ -61,7 +61,7 @@ module.exports = {
               modules: {
                 mode: 'local',
                 exportGlobals: true,
-                localIdentName: env === 'development' ? '[name]__[local]__[hash:base64:5]' : '[hash:base64:5]',
+                localIdentName: env === 'production' ? '[hash:base64:5]' : '[name]__[local]__[hash:base64:5]',
                 context: path.resolve(__dirname, '../src'),
                 hashPrefix: 'React Enterprice kit',
               },
@@ -70,13 +70,13 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: env === 'development',
+              sourceMap: env !== 'production',
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: env === 'development',
+              sourceMap: env !== 'production',
             },
           },
         ],

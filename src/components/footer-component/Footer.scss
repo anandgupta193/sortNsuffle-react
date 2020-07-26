@@ -1,0 +1,7 @@
+.footerWrapper {
+    padding-left: 64px;
+
+    @media only screen and (max-width: 375px) {
+        padding-left: 32px;
+    }
+}
